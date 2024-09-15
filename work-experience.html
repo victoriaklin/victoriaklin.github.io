@@ -5,30 +5,42 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Work Experience</h1>
-    <a href="index.html" class="button">Home</a>
-    <a href="projects.html" class="button">Projects</a>
-    <a href="assignments.html" class="button">Assignments</a>
-    <a href="contact.html" class="button">Contact Me</a>
-    <p class="work">
+    <!-- Flex container for header and buttons -->
+    <div class="header-container">
+        <h1>Work Experience</h1>
+
+        <!-- Button container -->
+        <div class="button-container">
+            <a href="index.html" class="button">Home</a>
+            <a href="projects.html" class="button">Projects</a>
+            <a href="assignments.html" class="button">Assignments</a>
+            <a href="contact.html" class="button">Contact Me</a>
+        </div>
+    </div>
+
+    <!-- Work Experience Section -->
+
+    <!-- Work Experience Block 1 -->
+    <div class="work-experience-container">
         <h3>Empower - SWE Intern</h3>
-        <div>
-            <ul>
-                <li>Scraped data using Prometheus</li>
-                <li>Visualized data using Grafana</li>
-                <li>Created script to parse through JSON files and extract data</li>
-            </ul>
-        </div>
-    </p>
-    <p class="work">
+        <hr>
+        <ul>
+            <li>Scraped data using Prometheus</li>
+            <li>Visualized data using Grafana</li>
+            <li>Created script to parse through JSON files and extract data</li>
+        </ul>
+    </div>
+
+    <!-- Work Experience Block 2 -->
+    <div class="work-experience-container">
         <h3>GPTS - Desktop Support Assistant</h3>
-        <div>
-            <ul>
-                <li>Utilized ServiceNow platform to track and update client tickets daily</li>
-                <li>Provided technical support over the phone, email, and desktop chat to clients</li>
-                <li>Diagnosed and repaired network malfunctions including file deletion, <br>failed account entry, and 3rd party software compatibility issues</li>
-            </ul>    
-        </div>
-    </p>
+        <hr>
+        <ul>
+            <li>Utilized ServiceNow platform to track and update client tickets daily</li>
+            <li>Provided technical support over the phone, email, and desktop chat to clients</li>
+            <li>Diagnosed and repaired network malfunctions including file deletion, failed account entry, and 3rd party software compatibility issues</li>
+        </ul>
+    </div>
+
 </body>
 </html>

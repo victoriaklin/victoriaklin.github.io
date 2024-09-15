@@ -5,32 +5,44 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Projects</h1>
-    <a href="index.html" class="button">Home</a>
-    <a href="work-experience.html" class="button">Work Experience</a>
-    <a href="assignments.html" class="button">Assignments</a>
-    <a href="contact.html" class="button">Contact Me</a>
-    <p>
+    <!-- Flex container for header and buttons -->
+    <div class="header-container">
+        <h1>Projects</h1>
+
+        <!-- Button container -->
+        <div class="button-container">
+            <a href="index.html" class="button">Home</a>
+            <a href="work-experience.html" class="button">Work Experience</a>
+            <a href="assignments.html" class="button">Assignments</a>
+            <a href="contact.html" class="button">Contact Me</a>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+
+    <!-- Project Block 1 -->
+    <div class="projects-container">
         <h3>Bite Balance</h3>
-        <div>
-            <p>An app that generates recipes for users based on selected dietary restrictions/allergies.</p>
-            <ul>
-                <li>Integrated APIs such as Google OAuth and Edamam</li>
-                <li>Created a database using Room to store recipes</li>
-                <li>Designed and implemented UI/UX in Kotlin</li>
-                <li>Used Git/Github to manage version control and collaborate with other team members</li>
-            </ul>
-        </div>
-    </p>
-    <p>
+        <hr>
+        <p><i>An app that generates recipes for users based on selected dietary restrictions/allergies</i></p>
+        <ul>
+            <li>Integrated APIs such as Google OAuth and Edamam</li>
+            <li>Created a database using Room to store recipes</li>
+            <li>Designed and implemented UI/UX in Kotlin</li>
+            <li>Used Git/Github to manage version control and collaborate with other team members</li>
+        </ul>
+    </div>
+
+    <!-- Project Block 2 -->
+    <div class="projects-container">
         <h3>Stream Sync</h3>
-        <div>
-            <p>An app to transfer/convert playlists and songs from one music platform to another</p>
-            <ul>
-                <li>Integrated external APIs such as Youtube Data and Spotify</li>
-                <li>Implemented Google OAuth using Firebase</li>
-            </ul>
-        </div>
-    </p>
+        <hr>
+        <p><i>An app to transfer/convert playlists and songs from one music platform to another</i></p>
+        <ul>
+            <li>Integrated external APIs such as YouTube Data and Spotify</li>
+            <li>Implemented Google OAuth using Firebase</li>
+        </ul>
+    </div>
+
 </body>
 </html>

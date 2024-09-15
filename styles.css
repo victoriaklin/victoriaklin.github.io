@@ -1,53 +1,120 @@
-body{
+/* Body background */
+body {
     background-color: #ffd1de;
 }
-h1{
-    text-align: center;
+
+/* Shrink the h1 header, keeping border and colors */
+h1 {
+    font-size: 35px; /* Smaller header */
+    color: #f07795;
+    background-color: #f9eba6;
+    text-align: left; /* Align header to the left */
+    border-radius: 30px;
+    padding: 10px;
+    margin: 0; /* Remove extra margin */
+    width: auto;
+}
+
+/* Flex container for header and buttons */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Header on left, buttons on right */
+    align-items: center; /* Align them vertically on the same plane */
+    padding: 20px;
     border-radius: 30px;
     background-color: #f9eba6;
-    color: #f07795;
-    height: 80px;
-    font-size: 65px;
-    margin-top: auto;
 }
-h2{
-    background-color: #f9eba6;
-    color: #f07795;
-    border-radius: 15px;
-    text-align: center;
-    width: 12%;
-}
-h3{
-    background-color: #f9eba6;
-    color: #f07795;
-    border-radius: 15px;
-    text-align: center;
-    width: 30%;
-    height: 25px;
-    margin-bottom: auto;
-}
+
+/* Button styling */
 .button {
     display: inline-block;
-    padding: 10px 10px;
+    padding: 10px 20px;
     background-color: #82c3f0;
     color: white;
     text-align: center;
     text-decoration: none;
     border-radius: 8px;
     font-size: 15px;
+    margin-left: 10px; /* Space between buttons */
 }
+
 .button:hover {
     background-color: #cfebff;
 }
-.photo{
+
+/* Button container to keep buttons aligned */
+.button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+/* Style for the photo and about me section */
+.about-container {
+    display: flex;
+    justify-content: center; /* Center the entire section */
+    align-items: center; /* Align items vertically */
+    margin-top: 50px; /* Add spacing above the section */
+}
+
+/* About section with border around both heading and paragraph */
+.about-text-container {
+    background-color: #f9eba6;
+    color: #f07795;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: left;
+    border: 3px solid #f07795; /* Border around the block */
+    max-width: 400px; /* Limit width for better readability */
+}
+
+.about-text-container h2 {
+    margin: 0; /* Remove margin to keep it tight within the block */
+    text-align: left;
+}
+
+.about-text-container p {
+    margin-top: 10px;
+}
+
+.about-text-container hr {
+    border: 1px solid #f07795; /* Horizontal rule styling */
+    margin: 10px 0; /* Add space around the HR */
+}
+
+.photo {
     border-radius: 22px;
     border: 8px solid #f07795;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-right: 30px; /* Add space between the photo and the text */
+    width: 200px;
+    height: auto;
 }
-div{
+.work-experience-container, /* Reuse this class for Work Experience */
+.projects-container, /* For the Projects page */
+.assignments-container { /* For the Assignments page */
     background-color: #f9eba6;
-    border-radius: 20px;
-    width: 30%;
+    color: #f07795;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: left;
+    border: 3px solid #f07795; /* Border around the block */
+    margin-top: 40px; /* Add space between the header and each block */
+    margin-bottom: 20px; /* Space between each block */
+    max-width: 600px; /* Adjust width for longer descriptions */
+}
+
+.work-experience-container hr,
+.projects-container hr,
+.assignments-container hr {
+    border: 1px solid #f07795;
+    margin: 10px 0; /* Add space around the HR */
+}
+
+.work-experience-container p,
+.projects-container p,
+.assignments-container p,
+.work-experience-container ul,
+.projects-container ul,
+.assignments-container ul {
+    margin-top: 10px;
+    padding-left: 20px; /* For list indentation */
 }
